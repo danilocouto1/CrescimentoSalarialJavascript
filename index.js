@@ -44,7 +44,11 @@ console.log("Opcao escolhida: " + key +"\n");
 
 switch (Number(key)) {
     case 1:
-        
+        //Saida de dados
+        for(let dado of salarioMinimo) {
+            console.log("Ano:".padEnd(20, ".") + dado.ano);
+            console.log("Salario:".padEnd(20, ".")+ "R$ " + dado.salario.toFixed(2).replace(".",",") + "\n");
+        }
         break;
     case 2:
         
