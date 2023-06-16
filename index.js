@@ -78,6 +78,7 @@ switch (Number(key)) {
         break;
 
     default:
-        
+        //Saida de dados
+        console.log("Valor incorreto!");
         break;
 }
