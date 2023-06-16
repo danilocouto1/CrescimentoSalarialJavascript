@@ -38,3 +38,22 @@ console.log(`Escolha uma das alternativas:
 
 var key = entrada.question("Digite o numero de sua escolha: ");
 
+//Processamento de dados
+
+console.log("Opcao escolhida: " + key +"\n");
+
+switch (Number(key)) {
+    case 1:
+        
+        break;
+    case 2:
+        
+        break;
+    case 3:
+        
+        break;
+
+    default:
+        
+        break;
+}
