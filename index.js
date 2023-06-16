@@ -58,7 +58,23 @@ switch (Number(key)) {
         }
         break;
     case 3:
-        
+        //Saida de dados
+        for (let i = 0; i < salarioMinimo.length; i++) {
+            let ano = salarioMinimo[i].ano;
+            let salario = salarioMinimo[i].salario;
+            let ipca = inflacao[i].ipca;
+            let crescimentoSalarial = (i == 0) ? '-' :  ((salarioMinimo[i].salario - salarioMinimo[i-1].salario) /salarioMinimo[i-1].salario)* 100;
+
+            console.log("Ano:".padEnd(30, ".") + ano);
+            console.log("Salario:".padEnd(30, ".")+ "R$ " + salario.toFixed(2).replace(".",","));
+            if (i == 0) {
+                console.log("Crescimento salarial: "+ crescimentoSalarial);
+            } else {
+                console.log("Crescimento salarial:".padEnd(30, ".")+ crescimentoSalarial.toFixed(2).replace(".",",")+ "%");
+            }
+            console.log("IPCA:".padEnd(30, ".") + ipca.toFixed(2).replace(".",",") + "%\n");
+
+        }
         break;
 
     default:
