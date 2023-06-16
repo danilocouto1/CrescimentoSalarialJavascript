@@ -51,7 +51,11 @@ switch (Number(key)) {
         }
         break;
     case 2:
-        
+        //Saida de dados
+        for(let dado of inflacao) {
+            console.log("Ano:".padEnd(20, ".") + dado.ano);
+            console.log("IPCA:".padEnd(20, ".") + dado.ipca.toFixed(2).replace(".",",") + "%\n");
+        }
         break;
     case 3:
         
